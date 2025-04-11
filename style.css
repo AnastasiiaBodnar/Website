@@ -3,15 +3,12 @@
     --text-light: #9E9E9E;
     --text-dark: #424242;
     --text-white: #FFFFFF;
-    --font-family: 'Poppins';
+    --font-family: 'Poppins', sans-serif;
 }
 
 *{
     margin: 0;
     padding: 0;
-    border: none;
-    outline: none;
-    text-decoration: none;
     box-sizing: border-box;
     font-family: var(--font-family);
 }
@@ -24,14 +21,22 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 30px 50px;
 }
 
 .logo {
     font-size: 24px;
-    font-weight: bold;
-    color: var(--text-dark);
+    font-weight: 700;
 }
+
+.logo-white {
+    color: var(--text-white);
+}
+
+.logo-orange {
+    color: var(--primary-color);
+}
+
 
 .nav {
     display: flex;
@@ -42,6 +47,7 @@ body{
     text-decoration: none;
     color: var(--text-white);
     font-weight: 500;
+    font-size: 16px;
 }
 
 #home {
@@ -53,4 +59,58 @@ body{
     flex-direction: column;
     text-align: center;
     color: var(--text-white);
-    } 
+    position: relative;
+} 
+
+.hero {
+    margin: auto;
+    text-align: center;
+    max-width: 800px;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.small_text{
+    font-size: 18px;
+}
+
+.hero_title {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.hero_text{
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.hero_description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.hero_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button_1, .button_2 {
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.button_1 {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.button_2 {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}

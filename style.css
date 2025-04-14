@@ -33,6 +33,9 @@ body{
     color: var(--text-white);
 }
 
+.logo-dark{
+    color: var(--text-dark);
+}
 .logo-orange {
     color: var(--primary-color);
 }
@@ -140,4 +143,57 @@ body{
     border-radius: 12px;
     width: 140px;
     height: 40px;
+}
+
+
+.footer {
+    background-color: var(--text-white);
+    color: var(--text-white);
+    padding: 60px 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-brand {
+    width: 30%;
+}
+
+.footer-text, .footer-email {
+    color: var(--text-light);
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.footer-links {
+    display: flex;
+    gap: 60px;
+    width: 60%;
+    justify-content: flex-end;
+}
+
+.links-column {
+    min-width: 150px;
+}
+
+.links-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+
+.links-column li {
+    margin-bottom: 12px;
+}
+
+.links-column a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.3s;
 }

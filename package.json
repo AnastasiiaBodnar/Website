@@ -1,0 +1,24 @@
+{
+  "name": "lab_6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnastasiiaBodnar/Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnastasiiaBodnar/Website/issues"
+  },
+  "homepage": "https://github.com/AnastasiiaBodnar/Website#readme",
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "gulp": "^5.0.0"
+  }
+}

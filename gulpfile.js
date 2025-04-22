@@ -1,5 +1,6 @@
 const { src, dest, watch, series } = require('gulp');
 const browserSync = require('browser-sync').create();
+const sass = require('gulp-sass')(require('sass')); 
 
 function htmlTask() {
   return src('src/index.html')
@@ -7,9 +8,10 @@ function htmlTask() {
     .pipe(browserSync.stream());
 }
 
-function cssTask() {
-  return src('src/style.css')
-    .pipe(dest('dist'))
+function scssTask() {
+  return src('src/scss/style.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(dest('dist/css'))
     .pipe(browserSync.stream());
 }
 
@@ -19,7 +21,6 @@ function imageTask() {
     .pipe(browserSync.stream());
 }
 
-
 function serve() {
   browserSync.init({
     server: {
@@ -28,8 +29,8 @@ function serve() {
   });
 
   watch('src/index.html', htmlTask);
-  watch('src/style.css', cssTask);
+  watch('src/**/*.scss', scssTask); 
   watch('src/img/**/*', imageTask);
 }
 
-exports.default = series(htmlTask, cssTask, imageTask, serve);
+exports.default = series(htmlTask, scssTask, imageTask, serve);

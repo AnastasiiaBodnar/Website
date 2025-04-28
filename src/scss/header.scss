@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+.header__logo { font-size: 24px; font-weight: 700; }
+.header__logo-text--white { color: var(--text-white); }
+.header__logo-text--orange { color: var(--primary-color); }
+
+
+.header__nav { display: flex; flex: 1; justify-content: center; align-items: center; position: relative; }
+.header__nav-center { display: flex; gap: 20px; }
+.header__nav-right { position: absolute; right: 0; }
+.header__nav-link { text-decoration: none; color: var(--text-white); font-weight: 500; font-size: 16px; }

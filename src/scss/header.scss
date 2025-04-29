@@ -1,15 +1,91 @@
 .header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+
+  &__logo {
+    font-size: 24px;
+    font-weight: 700;
+
+    &-text--white {
+      color: var(--text-white);
+    }
+
+    &-text--orange {
+      color: var(--primary-color);
+    }
+  }
+
+  &__nav {
     display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &-center {
+      display: flex;
+      gap: 20px;
+    }
+
+    &-right {
+      position: absolute;
+      right: 0;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: var(--text-white);
+      font-weight: 500;
+      font-size: 16px;
+    }
+  }
+
+  &__burger {
+    display: none;
+    font-size: 28px;
+    color: var(--text-white);
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 20px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 50px;
+
+    &__burger {
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      z-index: 20;
+    }
+
+    &__nav {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      display: none;
+      flex-direction: column;
+      padding: 20px;
+      
+      &-link {
+        padding: 10px 0;
+        font-size: 18px;
+        color: var(--text-white);
+        text-align: left;
+      }
+    }
+  }
 }
-.header__logo { font-size: 24px; font-weight: 700; }
-.header__logo-text--white { color: var(--text-white); }
-.header__logo-text--orange { color: var(--primary-color); }
-
-
-.header__nav { display: flex; flex: 1; justify-content: center; align-items: center; position: relative; }
-.header__nav-center { display: flex; gap: 20px; }
-.header__nav-right { position: absolute; right: 0; }
-.header__nav-link { text-decoration: none; color: var(--text-white); font-weight: 500; font-size: 16px; }

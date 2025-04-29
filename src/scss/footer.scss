@@ -2,58 +2,63 @@
     background-color: var(--text-white);
     color: var(--text-white);
     padding: 60px 50px;
-}
-
-.footer__logo{
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.footer__logo--dark { color: var(--text-dark); }
-.footer__logo--orange { color: var(--primary-color); }
-
-.footer__content {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer__brand {
-    width: 30%;
-}
-
-.footer__text, .footer__email {
-    color: var(--text-light);
-    margin-top: 15px;
-    line-height: 1.6;
-}
-
-.footer__links {
-    display: flex;
-    gap: 60px;
-    width: 60%;
-    justify-content: flex-end;
-}
-
-.footer__links--column {
-    min-width: 150px;
-}
-
-.footer__links--title {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    color: var(--text-dark);
-}
-
-
-.footer__links--column li {
-    margin-bottom: 12px;
-}
-
-.footer__links--column a {
-    color: var(--text-light);
-    text-decoration: none;
-    transition: color 0.3s;
+  
+    &__logo {
+      font-size: 24px;
+      font-weight: 700;
+  
+      &--dark {
+        color: var(--text-dark);
+      }
+  
+      &--orange {
+        color: var(--primary-color);
+      }
+    }
+  
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    &__brand {
+      width: 30%;
+    }
+  
+    &__text,
+    &__email {
+      color: var(--text-light);
+      margin-top: 15px;
+      line-height: 1.6;
+    }
+  
+    &__links {
+      display: flex;
+      gap: 60px;
+      width: 60%;
+      justify-content: flex-end;
+  
+      &--column {
+        min-width: 150px;
+  
+        li {
+          margin-bottom: 12px;
+        }
+  
+        a {
+          color: var(--text-light);
+          text-decoration: none;
+          transition: color 0.3s;
+        }
+      }
+  
+      &--title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: var(--text-dark);
+      }
+    }
 }

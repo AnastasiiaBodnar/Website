@@ -3,63 +3,62 @@
     max-width: 800px;
     padding: 0 74px;
     text-align: left;
-}
-
-.hero--small_text{
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-
-.hero__title {
-    font-size: 64px;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-.hero__logo--white { color: var(--text-white); }
-.hero__logo--orange { color: var(--primary-color); }
-
-.hero__text{
-    font-size: 64px;
-    font-weight: 700;
-    padding-bottom: 30px;
-}
-
-.hero__description {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    width: 600px;
-}
-
-.hero__buttons {
-    display: flex;
-    justify-content: start;
-    gap: 20px;
-}
-
-.hero__button1, .hero__button2 {
-    padding: 12px 30px;
-    font-size: 14px;
-    text-decoration: none;
-    white-space: nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero__button1 {
-    background-color: var(--primary-color);
-    color: white;
-    border-radius: 12px;
-    width: 120px;
-    height: 40px;
-}
-
-.hero__button2 {
-    text-decoration: none;
-    color: white;
-    border: 1px solid white;
-    border-radius: 12px;
-    width: 140px;
-    height: 40px;
-}
+  
+    &--small_text {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  
+    &__title,
+    &__text {
+      font-size: 64px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+  
+    &__logo--white {
+      color: var(--text-white);
+    }
+  
+    &__logo--orange {
+      color: var(--primary-color);
+    }
+  
+    &__description {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      width: 600px;
+    }
+  
+    &__buttons {
+      display: flex;
+      justify-content: start;
+      gap: 20px;
+    }
+  
+    &__button1,
+    &__button2 {
+      padding: 12px 30px;
+      font-size: 14px;
+      text-decoration: none;
+      white-space: nowrap;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+    }
+  
+    &__button1 {
+      background-color: var(--primary-color);
+      color: white;
+      width: 120px;
+      height: 40px;
+    }
+  
+    &__button2 {
+      color: white;
+      border: 1px solid white;
+      width: 140px;
+      height: 40px;
+    }
+  }

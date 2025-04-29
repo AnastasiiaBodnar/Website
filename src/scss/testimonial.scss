@@ -1,71 +1,71 @@
 .testimonial {
-    padding: 80px 140px;
-    background: #fff;
-    text-align: center;
+  padding: 80px 140px;
+  background: #fff;
+  text-align: center;
+
+  &__text--dark,
+  &__text--orange {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
   }
-  
-.testimonial__text--dark{
-    font-size: 40px;
-    font-weight: 700;
-    letter-spacing: 0.2px;
+
+  &__text--dark {
     color: var(--text-dark);
-}
+  }
 
-.testimonial__text--orange{
-    font-size: 40px;
-    font-weight: 700;
+  &__text--orange {
     color: var(--primary-color);
-    letter-spacing: 0.2px;
-}
+  }
 
-  .testimonial__title {
+  &__title {
     font-size: 1rem;
     color: var(--text);
     margin-bottom: 20px;
   }
-  
-  .testimonial__heading {
+
+  &__heading {
     margin-top: 10px;
     margin-bottom: 50px;
   }
-  
-  .testimonial__container {
+
+  &__container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
   }
-  
-  .testimonial__card {
+
+  &__card {
     width: 250px;
     padding: 30px 20px;
     border-radius: 10px;
     background: white;
     text-align: center;
+
+    .testimonial__quote {
+      font-size: 40px;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+    }
+
+    .testimonial__text {
+      font-size: 14px;
+      color: var(--text);
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .testimonial__name {
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--text-dark);
+      margin-bottom: 5px;
+    }
+
+    .testimonial__email {
+      font-size: 13px;
+      color: var(--text-light);
+    }
   }
-  
-  .testimonial__quote {
-    font-size: 40px;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-  }
-  
-  .testimonial__text {
-    font-size: 14px;
-    color: var(--text);
-    margin-bottom: 20px;
-    line-height: 1.6;
-  }
-  
-  .testimonial__name {
-    font-weight: 700;
-    font-size: 16px;
-    color: var(--text-dark);
-    margin-bottom: 5px;
-  }
-  
-  .testimonial__email {
-    font-size: 13px;
-    color: var(--text-light);
-  }
-  
+}

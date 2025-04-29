@@ -1,42 +1,42 @@
 .services {
-    padding: 80px 140px;
-    background: #fff;
-    text-align: center;
-  }
-  
-  .services__title {
+  padding: 80px 140px;
+  background: #fff;
+  text-align: center;
+
+  &__title {
     font-size: 1rem;
     color: var(--text);
     margin-bottom: 20px;
   }
 
-.services__text--dark{
+  &__text--dark,
+  &__text--orange {
     font-size: 40px;
     font-weight: 700;
     letter-spacing: 0.2px;
+  }
+
+  &__text--dark {
     color: var(--text-dark);
-}
+  }
 
-.services__text--orange{
-    font-size: 40px;
-    font-weight: 700;
+  &__text--orange {
     color: var(--primary-color);
-    letter-spacing: 0.2px;
-}
+  }
 
-  .services__heading {
+  &__heading {
     margin-top: 10px;
     margin-bottom: 40px;
   }
-  
-  .services__container {
+
+  &__container {
     display: flex;
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
   }
-  
-  .service__card {
+
+  &__card {
     width: 300px;
     height: 230px;
     background: white;
@@ -45,35 +45,36 @@
     padding: 30px 20px;
     transition: 0.3s ease;
     cursor: pointer;
-  
-    .service__icon {
-      height: 40px;
-      margin-bottom: 20px;
-      transition: 0.3s;
-    }
-  
-    .service__name {
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--text-dark);
-      margin-bottom: 10px;
-    }
-  
-    .service__desc {
-      font-size: 14px;
-      color: var(--text);
-    }
-  
+
     &:hover {
       background: var(--primary-color);
-  
-      .service__name,
-      .service__desc {
+
+      .services__name,
+      .services__desc {
         color: var(--text-white);
       }
-  
-      .service__icon {
-        filter: brightness(0) invert(1); 
+
+      .services__icon {
+        filter: brightness(0) invert(1);
       }
     }
   }
+
+  &__icon {
+    height: 40px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+  }
+
+  &__desc {
+    font-size: 14px;
+    color: var(--text);
+  }
+}
